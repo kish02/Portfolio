@@ -2,13 +2,14 @@ import React from "react";
 import { Timeline, Events, UrlButton, ImageEvent } from "@merc/react-timeline";
 
 // projects
-import L_ReactToDoList from "../../assets/img/projects/React_ToDo_List.webp";
-import L_MernTipCalc from "../../assets/img/projects/mern_tip_calc.webp";
-import L_GetGitHubInfo from "../../assets/img/projects/get_github_info.webp";
-import L_SmartBrain from "../../assets/img/projects/brain.webp";
-import L_RoboFriends from "../../assets/img/projects/Robofriends.webp";
-import L_ProductHuntClone from "../../assets/img/projects/product_hunt_clone.webp";
-import L_PortfolioUsingDjango from "../../assets/img/projects/portfolioUsingDjango.webp";
+// import L_ReactToDoList from "../../assets/img/projects/React_ToDo_List.webp";
+// import L_MernTipCalc from "../../assets/img/projects/mern_tip_calc.webp";
+// import L_GetGitHubInfo from "../../assets/img/projects/get_github_info.webp";
+// import L_SmartBrain from "../../assets/img/projects/brain.webp";
+// import L_RoboFriends from "../../assets/img/projects/Robofriends.webp";
+// import L_ProductHuntClone from "../../assets/img/projects/product_hunt_clone.webp";
+// import L_PortfolioUsingDjango from "../../assets/img/projects/portfolioUsingDjango.webp";
+import L_PortfolioUsingReact from "../../assets/img/projects/p1.png";
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 
@@ -23,7 +24,7 @@ import L_REDUX from "../../assets/img/skills/redux.svg";
 import L_HTML5 from "../../assets/img/skills/html-5.svg";
 import L_CSS3 from "../../assets/img/skills/css3.svg";
 import L_BOOTSTRAP4 from "../../assets/img/skills/bootstrap-4.svg";
-import L_DJANGO from "../../assets/img/skills/django.svg";
+
 import L_DIGITAL_OCEAN from "../../assets/img/skills/digital-ocean.svg";
 import L_GIT from "../../assets/img/skills/github-api.svg";
 import L_MATERIALUI from "../../assets/img/skills/material-ui-1.svg";
@@ -38,7 +39,7 @@ const TimeLine = () => {
       <Timeline>
         <Events>
         {/* Project: Todo List With MUI */}
-        <ImageEvent
+        {/* <ImageEvent
             date="01/10/2020"
             className="text-center"
             text="React ToDo App"
@@ -142,11 +143,11 @@ const TimeLine = () => {
                 </UrlButton>
               </div>
             </div>
-          </ImageEvent>
+          </ImageEvent> */}
 
 
 {/* Project: MERN Tip Calculator */}
-<ImageEvent
+{/* <ImageEvent
             date="16/09/2020"
             className="text-center"
             text="MERN Tip Calculator"
@@ -255,10 +256,10 @@ const TimeLine = () => {
                 </UrlButton>
               </div>
             </div>
-          </ImageEvent>
+          </ImageEvent> */}
 
           {/* Project: Get GitHub Info */}
-          <ImageEvent
+          {/* <ImageEvent
             date="19/07/2020"
             className="text-center"
             text="Get GitHub Info"
@@ -362,10 +363,10 @@ const TimeLine = () => {
                 </UrlButton>
               </div>
             </div>
-          </ImageEvent>
+          </ImageEvent> */}
 
           {/* Project: Smart Brain */}
-          <ImageEvent
+          {/* <ImageEvent
             date="21/01/2020"
             className="text-center"
             text="Smart Brain Face Detect app"
@@ -484,11 +485,11 @@ const TimeLine = () => {
                 </UrlButton>
               </div>
             </div>
-          </ImageEvent>
+          </ImageEvent> */}
 
           {/* Project: RoboFriends */}
 
-          <ImageEvent
+          {/* <ImageEvent
             date="14/01/2020"
             className="text-center"
             text="RoboFriends"
@@ -597,11 +598,11 @@ const TimeLine = () => {
                 </UrlButton>
               </div>
             </div>
-          </ImageEvent>
+          </ImageEvent> */}
 
           {/* Project: Product_Hunt_Clone */}
 
-          <ImageEvent
+          {/* <ImageEvent
             date="15/12/2019"
             className="text-center"
             text="Product Hunt Clone"
@@ -707,15 +708,15 @@ const TimeLine = () => {
                 </UrlButton>
               </div>
             </div>
-          </ImageEvent>
+          </ImageEvent> */}
 
           {/* Project: Portfolio using Django */}
           <ImageEvent
-            date="07/12/2019"
+            // date="07/12/2019"
             className="text-center"
-            text="Portfolio using Django"
-            src={L_PortfolioUsingDjango}
-            alt="Portfolio using Django"
+            text="Portfolio using React"
+            src={L_PortfolioUsingReact}
+            alt="Portfolio using React"
           >
             <div className="d-flex justify-content-between flex-column mt-1">
               <div>
@@ -732,17 +733,17 @@ const TimeLine = () => {
                     <Accordion.Collapse eventKey="0" className="text-left">
                       <Card.Body>
                         <strong>Description:</strong> This is my first portfolio
-                        website built using Django.
+                        website built using React.
                         <hr />
                         <strong>Features:</strong>
                         <ul className="list-styles pt-1">
                           <li>Send emails</li>
                           <li>View my projects</li>
-                          <li>Write a blog</li>
+                          <li>View my resume</li>
                           <li>
-                            Hosted using Digital ocean under www.akjfun.com
+                            Hosted using Github
                           </li>
-                          <li>Fully funtional Administration panel</li>
+                          <li>Fully funtional</li>
                         </ul>
                         <hr />
                         <strong>Tech used:</strong>
@@ -783,15 +784,15 @@ const TimeLine = () => {
                           <li>
                             <span className="p-2">
                               <Image
-                                src={L_DJANGO}
-                                alt="Django"
+                                src={L_REACT}
+                                alt="React"
                                 rounded
                                 className="image-style m-1"
                               ></Image>{" "}
-                              Django
+                              React
                             </span>
                           </li>
-                          <li>
+                          {/* <li>
                             <span className="p-2">
                               <Image
                                 src={L_POSTGRESQL}
@@ -801,8 +802,8 @@ const TimeLine = () => {
                               ></Image>{" "}
                               PostgreSQL
                             </span>
-                          </li>
-                          <li>
+                          </li> */}
+                          {/* <li>
                             <span className="p-2">
                               <Image
                                 src={L_DIGITAL_OCEAN}
@@ -812,10 +813,10 @@ const TimeLine = () => {
                               ></Image>{" "}
                               Digital-Ocean
                             </span>
-                          </li>
+                          </li> */}
                         </ul>
                         <hr />
-                        <em>
+                        {/* <em>
                           <strong>View Demo Video:</strong>
                           <br />
                           <br />
@@ -826,15 +827,15 @@ const TimeLine = () => {
                           clicking on the button below.
                           <br />
                           <br />
-                        </em>
+                        </em> */}
                       </Card.Body>
                     </Accordion.Collapse>
                   </Card>
                 </Accordion>
               </div>
               <div className="d-flex justify-content-between flex-nowrap text-center">
-                <UrlButton href="https://youtu.be/PCwEuW4OmWA" target="_blank">
-                  WATCH VIDEO
+                <UrlButton href="https://kish02.github.io/Portfolio/" target="_blank">
+                  Check Live
                 </UrlButton>
               </div>
             </div>
